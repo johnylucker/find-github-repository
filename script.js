@@ -35,7 +35,6 @@ async function dropdownMenu() {
               button.parentElement.remove()
             })
           })
-          console.log()
           dropdownList.innerHTML = '';
           input.value = '';
         });
@@ -61,9 +60,5 @@ const debounce = (fn, debounceTime) => {
 function getRepo() {
   input.addEventListener('input', debounce(dropdownMenu, 400));
 }
-
-// function closeButton() {
-
-// }
 
 getRepo()
