@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #000000;
+  font-size: 24px;
+}
+
+.main {
+  margin: 20px auto;
+  padding: 62px 84px 72px 74px;
+  background-color: #C4C4C4;
+  width: 661px;
+  min-height: 650px;
+}
+
+.input {
+  width: 500px;
+  height: 61px;
+  font-size: 48px;
+  padding: 11px 13px;
+  font-family: inherit;
+  color: inherit;
+}
+
+.list {
+  width: 500px;
+  margin-top: 45px;
+}
+
+.list__element {
+  background-color: #E27BEB;
+  padding: 8px 16px;
+  border: 1px solid #000000;
+  position: relative;
+}
+
+.dropdown-el {
+  background-color: #E3E3E3;
+  font-size: 30px;
+  border: 2px solid #000000;
+  padding: 10px;
+  width: 500px;
+  overflow-wrap: break-word;
+  cursor: pointer;
+}
+.dropdown-el:hover {
+  background-color: #65CDF9;
+}
+p {
+  word-break: break-word;
+  max-width: 444px;
+}
+
+.close-button {
+  border: none;
+  position: absolute;
+  top: 29px;
+  right: 25px;
+  width: 42px;
+  height: 42px;
+  cursor: pointer;
+  background-color: #E27BEB;
+}
+
+
+.close-button::before,
+.close-button::after {
+	content: '';
+	position: absolute;
+	display: block;
+	width: 42px;
+	height: 4px;
+	background-color: #FF0000;
+}
+
+.close-button::before {
+	transform: rotate(45deg);
+}
+
+.close-button::after {
+	transform: rotate(-45deg);
+}
